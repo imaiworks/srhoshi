@@ -34,7 +34,7 @@ async function loginWithCookie(page) {
 
 
 
-  await page.goto('https://www.showroom-live.com/0dac11119159');
+  await page.goto('https://www.showroom-live.com/');
   //await page.screenshot({path: 'example.png' , fullPage:true});
 //await new Promise(resolve => setTimeout(resolve, 1000 * 20));
 
