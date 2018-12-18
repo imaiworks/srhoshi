@@ -132,42 +132,6 @@ async function loginWithCookie(page) {
   }
 
 
-/*
-  await page.goto('https://www.showroom-live.com/0dac11119159');
-  await page.screenshot({path: 'example.png' , fullPage:true});
-//await new Promise(resolve => setTimeout(resolve, 1000 * 20));
-
-await page.addScriptTag({url: 'https://code.jquery.com/jquery-3.2.1.min.js'})
-
-const title = await page.evaluate(() => {
-  const $ = window.$; //otherwise the transpiler will rename it and won't work
- // $("#icon-room-onlive").click();
-
-  return $('title').text();
-});
-
-console.log(title);
-
-await page.click('#icon-room-twitter-wrapper');
-await sleep(1000);
-
-//await page.type('input[name="account_id"]', 'nodeexsample');
-//await page.type('input[name="password"]', '1ma1works');
-//await page.click('#js-login-submit');
-
-
-//await page.click('#icon-room-twitter-wrapper');
-//await sleep(1000);
-
-//twitter-textarea
-await page.click('#twitter-post-button');
-
-await sleep(1000);
-
-//const cookies = await page.cookies();
-//fs.writeFileSync('cookies_amazon.json', JSON.stringify(cookies));
-*/
-
   await browser.close();
 })();
 
