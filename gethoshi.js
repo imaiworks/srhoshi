@@ -60,14 +60,14 @@ async function loginWithCookie(page) {
       await page.addScriptTag({url: 'https://code.jquery.com/jquery-3.2.1.min.js'})
 
       const title = await page.evaluate(() => {
-        const $ = window.$; //otherwise the transpiler will rename it and won't work
+        const $ = window.$;
         return $('title').text();
      });
 
      console.log(title);
 
      const x99_before = await page.evaluate(() => {
-       const $ = window.$; //otherwise the transpiler will rename it and won't work
+       const $ = window.$;
 
        var ret="";
        ret=$('.room-gift-item').length;
@@ -96,7 +96,7 @@ async function loginWithCookie(page) {
        await sleep(2000);
 
        const x99_after = await page.evaluate(() => {
-         const $ = window.$; //otherwise the transpiler will rename it and won't work
+         const $ = window.$;
 
          var ret="";
          ret=$('.room-gift-item').length;
